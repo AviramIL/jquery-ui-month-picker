@@ -39,11 +39,13 @@ http://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt.
     var _badMinMaxVal =  _setupErr + '"_" is not a valid %Month value.';
     var _openedInstance = null;
     var _hasPosition = !!$.ui.position;
+    
     var _animVals = {
         Animation: ['slideToggle', 'fadeToggle', 'none'],
         ShowAnim: ['fadeIn', 'slideDown', 'none'],
         HideAnim: ['fadeOut', 'slideUp', 'none']
     };
+    
     var _setOptionHooks = {
         ValidationErrorMessage: '_createValidationMessage',
         Disabled: '_setDisabledState', 
@@ -58,6 +60,7 @@ http://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt.
         MaxMonth: '_setMaxMonth',
         SelectedMonth: '_setSelectedMonth'
     };
+    
     var $noop = $.noop;
     var $proxy = $.proxy;
     var $datepicker = $.datepicker;
@@ -155,6 +158,7 @@ http://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt.
     
     $.MonthPicker = {
         VERSION: '2.8.1', // Added in version 2.4;
+        
         i18n: {
             year: "Year",
             prevYear: "Previous Year",
